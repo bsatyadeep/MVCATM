@@ -20,7 +20,7 @@ namespace AutomatedTellerMachine.Tests
         {
             var homecontroller = new HomeController();
             var result = homecontroller.Contact("I like ATM Bank") as ViewResult;
-            if (result != null) Assert.AreEqual("Thanks!", result.ViewBag.TheMessage);
+            if (result != null) Assert.AreEqual("We got your message!", result.ViewBag.TheMessage);
         }
         [TestMethod]
         public void BalanceIsCorrectAfterDeposit()
